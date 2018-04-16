@@ -1,0 +1,121 @@
+@font-face{
+	font-family: Spring;
+	src: url(../font/Spring.otf);
+}
+
+@font-face{
+	font-family: Unicorn;
+	src: url(../font/Unicorn.otf);
+}
+p {
+	font-family: Spring;
+}
+
+h2 {
+	font-family: Unicorn;
+	font-size: ;
+}
+
+.left{
+	background-color: #FF0000;
+	flex-grow: 5;
+}
+
+.rigth{
+	background-color: #FBEFF2;
+	flex-grow: 50;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	height: 100%;
+}
+
+.personal{
+	border: 2px solid black;
+	padding: 20px;
+	width: 500px;
+	height: 685px;
+	margin: 15px;
+	text-align: center;
+	align-items: center;
+	border-radius: 20px;
+	background-color: #F6CEF5; 
+	
+}
+
+.border {
+	border-bottom: 2px dotted black;
+
+}
+
+img{
+	border-radius: 50%;
+	align-items: center;
+	height: 200px;
+	width: 200px;
+}
+
+.references{
+	border: 2px solid black;
+	padding: 20px;
+	width: 500px;
+	height: 500px;
+	text-align: center;
+	align-items: center;
+	margin: 15px;
+	border-radius: 20px;
+	background-color: #F6CEEC;
+}
+
+.work{
+	border: 2px solid black;
+	padding: 20px;
+	width: 500px;
+	height: 450px;
+	text-align: center;
+	align-items: center;
+	margin: 15px;
+	border-radius: 20px;
+	background-color: #F6CEE3;
+}
+
+.profile{
+	border: 2px solid black;
+	padding: 20px;
+	width: 500px;
+	height: 200px;
+	text-align: center;
+	align-items: center;
+	margin: 15px;
+	border-radius: 20px;
+	background-color: #F6CED8;
+}
+
+h2 {
+
+	font-size: 30px;
+}
+
+@media (max-width: 1040.98px){
+	.left {
+		background-color: #7D3C98;
+	}
+	.personal, .profile, .references, .work { 
+		background-color: rgb(74, 74, 228);
+	}
+	.body{
+		height: 100vh;
+		width: 100%;
+	}
+	.right{
+		height: 100%;
+		width: 100%;
+	}
+}
