@@ -1,0 +1,27 @@
+1.	I will go to the SENA but first I have to bathe
+2.	 Ready the uniform
+3.	I go to the patio and under the towel
+4.	I take 10 steps and I arrive to the bathroom
+5.	I close the bathroom door
+6.	I take off my clothes
+7.	I get in the shower and close the curtain
+8.	I open the shower key
+9.	I wet my hair and body
+10.	I close the key
+11.	I apply the shampoo and soap
+12.	I get stuck
+13.	I open the key again and I shampoo and soap
+14.	I close the key
+15.	I open the curtain
+16.	I take the towel and dry my body
+17.	I wrap myself in the towel
+18.	I pick up my clothes from the floor and put on my flip-flops
+19.	I open the bathroom door
+20.	I take 6 steps and I arrive to the room
+21.	I close the door
+22.	I put on my uniform
+23.	I open the door of the room and go out to the patio
+24.	I hang the towel
+25.	I return to the room
+26.	I comb my hair and make up
+27.	I take the briefcase and wait for the man who transports me to go to the SENA

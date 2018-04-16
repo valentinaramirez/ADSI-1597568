@@ -1,0 +1,9 @@
+1.	I am at the door of my house
+2.	It made me want to eat an ice cream
+3.	I leave my house and take 95 steps until I reach the corner, I turn right and I take 25 steps, I turn and turn right and I take 30 steps until I get to the ice cream shop
+
+4.	I come to the ice cream shop and greet
+5.	I order my ice cream in this case a chococono
+6.	I take the money out of my pocket 
+7.	I pay for the ice cream
+8.	I return to my house and enjoy my ice cream

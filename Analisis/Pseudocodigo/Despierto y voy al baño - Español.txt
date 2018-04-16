@@ -1,0 +1,23 @@
+1. Abro los ojos
+2. Me siento en la cama
+3. Me pongo las chanclas
+4. Me paro de la cama
+5. Abro la puerta de la habitación
+6. Doy 6 pasos y llego al baño
+7. Cierro la puerta
+8. Me preparo para orinar
+9. Termino de orinar
+10. Doy dos pasos al lavamanos
+11. Abro la llave del lavamanos
+12. Me mojo las manos
+13. Me aplico jabón en las manos
+14. Me las juago
+15. Cierro la llave
+16. Abro la puerta del baño
+17. Doy 6 pasos
+18. Llego a la habitación
+19. Cierro la puerta
+20. Me siento en la cama
+21. Me quito las chanclas
+22. Me acuesto en la cama
+23. Sigo durmiendo

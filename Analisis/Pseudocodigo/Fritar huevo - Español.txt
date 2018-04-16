@@ -1,0 +1,23 @@
+1.	Estoy en la sala
+2.	Me dio hambre y quiero comerme un huevo
+3.	Me paro de la silla
+4.	Doy 8 pasos a la cocina
+5.	Me agacho y abro el gabinete de la cocina para sacar la cacerola
+6.	Me paro y pongo la cacerola en el mesón
+7.	Doy 3 pasos y llego a la nevera
+8.	Saco la mantequilla y el huevo
+9.	Cierro la nevera
+10.	Doy 3 pasos y llego de nuevo al mesón y coloco todo allí
+11.	Cojo la caja con fósforos, saco uno y enciendo la perilla de la estufa
+12.	Coloco allí la cacerola
+13.	Saco mantequilla y se la hecho a la cacerola
+14.	Dejo que se caliente y toteo el huevo y se lo hecho
+15.	Espero que se frite el huevo
+16.	Voy al gabinete y bajo un plato
+17.	Apago la estufa
+18.	Saco el huevo de la cacerola y lo coloco en el plato
+19.	Saco el tarro con sal del gabinete y lo destapo
+20.	Le hecho sal al huevo
+21.	Cojo el plato con el huevo y una cuchara
+22.	Doy 8 pasos para volver al comedor
+23.	Me siento y disfruto de mi delicioso huevo
