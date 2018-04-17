@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf­8">
+<title>Herencia</title>
+<style type="text/css">
+	/*Prioridad 111 (1 id, 1 clase y 1 elemento), si no hubiera estilo enlínea en la propia etiqueta, este sería el color de mayor prioridad*/
+	#caja .cabecera h1{background-color: Teal}
+	/*Prioridad 102 (1 id, 2 elementos)*/
+	#caja header h1{background-color: Beige}
+	/*Prioridad 101 (1 id y 1 elemento)*/
+	#caja h1{background-color: Purple}
+	/*Prioridad 12 (1 clase y 2 elementos)*/
+	div .cabecera h1{background-color: Aquamarine}
+	/*Prioridad 11 (1 clase y 1 elemento)*/
+	.cabecera h1{background-color: Turquoise}
+	/*Prioridad 3 (3 elementos)*/
+	div header h1{background-color: DarkGrey}
+	/*Prioridad 2 (2 elementos)*/
+	header h1{background-color: pink}
+	/*Prioridad 1 (1 elemento)*/
+	h1{background-color: red}
+	/*Prioridad 1 (1 elemento), pero tiene prioridad sobre el anterior de prioridad 1*/
+	h1{background-color: yellow}
+</style>
+</head>
+<body>
+
+<div id="caja">
+
+<header class="cabecera">
+	<!--Prioridad 1000(1 estilo en línea)-->
+    <h1 style="background-color: Salmon">Cabecera: header</h1> 
+</header>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+p{
+    font-family: monospace, sans-serif, serif;
+    background: red;     
+}
+body{
+    font-family: fantasy;
+    background-color: beige;    
+}
+h1{
+    background-color: blueviolet;
+    color: crimson
+}
+strong{
+    background-color: bisque;
+    font-size: 2em;
+}
+em{
+   // background-color: brown;
+    color: blue;
+    font-size: 1.5em;
+}
+
+li{
+   background-color: azure;
+   color: blue;
+    font-size: 1.2em;
+}

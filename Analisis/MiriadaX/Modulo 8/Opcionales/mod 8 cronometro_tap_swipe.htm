@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head><title>Event Example</title><meta charset="UTF-8">
+<style type="text/css">
+
+h1,p{
+  text-align: center;
+}
+div.box {
+    width: 3em;
+    height: 3em;
+    background-color: #108040;
+  }
+  div.box.tap {
+    background-color: #7ACEF4;
+  }
+
+#el{
+  margin: auto;
+  position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 250px; height: 250px;
+  background-color: #07D8BE;
+  line-height: 250px;
+  text-align: center;
+  &:before, &:after{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 500%;
+  }
+  &:before{
+    content: "\2039";
+    left: 0px;
+  }
+  &:after{
+    content: "\203A";
+    right: 0px;
+  }
+}
+</style>
+
+<script type="text/javascript" src="zepto.min.js" > </script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript">
+
+  $(function(){ 
+  	var banderaSwipeEND= false;
+    var t, cl = $("#crono");
+    document.onkeyup = PresTab;
+
+
+
+
+
+var touchStartCoords =  {'x':-1, 'y':-1}, // X and Y coordinates on mousedown or touchstart events.
+    touchEndCoords = {'x':-1, 'y':-1},// X and Y coordinates on mouseup or touchend events.
+    direction = 'undefined',// Swipe direction
+    minDistanceXAxis = 30,// Min distance on mousemove or touchmove on the X axis
+    maxDistanceYAxis = 30,// Max distance on mousemove or touchmove on the Y axis
+    maxAllowedTime = 1000,// Max allowed time between swipeStart and swipeEnd
+    startTime = 0,// Time on swipeStart
+    elapsedTime = 0,// Elapsed time between swipeStart and swipeEnd
+    targetElement = document.getElementById('el');// Element to delegate
+
+function swipeStart(e) {
+  e = e ? e : window.event;
+  e = ('changedTouches' in e)?e.changedTouches[0] : e;
+  touchStartCoords = {'x':e.pageX, 'y':e.pageY};
+  startTime = new Date().getTime();
+  targetElement.textContent = " ";
+}
+
+function swipeMove(e){
+  e = e ? e : window.event;
+  e.preventDefault();
+}
+
+function swipeEnd(e) {
+  e = e ? e : window.event;
+  e = ('changedTouches' in e)?e.changedTouches[0] : e;
+  touchEndCoords = {'x':e.pageX - touchStartCoords.x, 'y':e.pageY - touchStartCoords.y};
+  elapsedTime = new Date().getTime() - startTime;
+  if (elapsedTime <= maxAllowedTime){
+  	
+    if (Math.abs(touchEndCoords.x) >= minDistanceXAxis && Math.abs(touchEndCoords.y) <= maxDistanceYAxis){
+    	banderaSwipeEND= true;
+         parar();
+         cl.html("0.0"); 		
+     
+      
+      /*direction = (touchEndCoords.x < 0)? 'left' : 'right';
+      switch(direction){
+        case 'left':
+        	cambiar() ;
+          //targetElement.textContent = "Left swipe detected";
+          break;
+        case 'right':
+        	cambiar() ;
+          //targetElement.textContent = "Right swipe detected";
+          break;
+      }*/
+    }
+  }
+}
+
+
+
+function addMultipleListeners(el, s, fn) {
+  var evts = s.split(' ');
+  for (var i=0, iLen=evts.length; i<iLen; i++) {
+    el.addEventListener(evts[i], fn, false);
+  }
+}
+
+addMultipleListeners(targetElement, 'mousedown touchstart', swipeStart);
+addMultipleListeners(targetElement, 'mousemove touchmove', swipeMove);
+addMultipleListeners(targetElement, 'mouseup touchend', swipeEnd);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function mostrar()  { cl.html((+cl.html() + 0.1).toFixed(1)); };
+    function arrancar() { t=setInterval(mostrar, 100); };
+    function parar()    { clearInterval(t);  t=undefined;  };
+    function cambiar()  { 
+    	if (banderaSwipeEND===false){
+    		if (!t) arrancar(); else parar(); 
+        }
+        banderaSwipeEND= false;
+    	
+    }
+
+
+    $("#cambiar").on('click', cambiar);
+    $("#inicializar").on('click', function(){ cl.html("0.0"); });
+    $("#el").on('click tap', cambiar);
+    
+
+ 
+      
+    function PresTab(e)  
+    {
+        var keycode = (window.event) ? event.keyCode : e.keyCode;
+        if (keycode == 9)
+        {
+           	cambiar();
+           //alert('tab key pressed');
+        }
+    }
+
+
+
+
+
+
+  });
+</script>
+</head>
+<body>
+<h2>Cronómetro</h2>
+
+<h2><span id="crono"> 0.0 </span> segundos </h2> 
+
+<button type="button" id="cambiar"> arrancar/parar </button>
+<button type="button" id="inicializar">  inicializar </button>
+
+<h1>Tap en la caja para arrancar o parar</h1>
+<h1>Swipe en la caja para inicializar</h1>
+<!--  <p>Horizontal swipe example in native javascript based on mouse and touch event delegation. </p> -->
+  <div id="wrapper">
+    <div id="el">&nbsp;</div>    	
+  </div>
+
+  
+
+</body>
+</html>
