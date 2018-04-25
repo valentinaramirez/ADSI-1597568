@@ -1,0 +1,48 @@
+
+/* 
+    Created on : Apr 24, 2018, 9:53:35 AM
+    Author     : valentina ospina
+*/
+
+.calculadora{
+    display: flex;
+    align-content: center;
+    align-items: center;
+   border: 5px solid black;
+	padding: 100px;
+	width: 200px;
+	height: 150px;
+	margin: 10px;
+	text-align: center;
+	align-items: center;
+	border-radius: 30px;
+	background-color: red; 
+        display: table-cell
+        
+}
+input {
+    margin: 10px;
+}
+
+select {
+    margin: 10px;
+    
+}
+@media (max-width: 1040.98px){
+    .calculadora {
+        background-color: green;
+        border: 15px solid black;
+	padding: 70px;
+	width: 150px;
+	height: 100px;
+	margin: 70px;
+	text-align: center;
+	align-items: center;
+	border-radius: 200px; 
+        display: table-cell
+        
+    }
+    
+   
+}
+
